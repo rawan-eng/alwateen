@@ -188,42 +188,10 @@ justify-content: center;
   background: linear-gradient(135deg, #4B3FCF, #6C63FF);
   color: white;
 }
-/* الحاوية */
-.ramadan-decoration {
-  position: absolute;
-  top: 20px;
-  right: 20px;   /* بدلاً من left عشان ما يلمس صورة البروفايل */
-  width: 180px;
-  height: 180px;
-  z-index: 1;     /* أقل من الصورة */
-  pointer-events: none;
-}
 
-/* الهلال */
-.crescent {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: -30px 0 0 0 #D4AF37;
-  position: absolute;
-}
 
-/* الفانوس الأساسي */
-.lantern {
-  width:50px;
-  height: 80px;
-  background: linear-gradient(#FFD700, #E6B800);
-  border-radius: 10px;
-  position: absolute;
-  box-shadow: 0 0 25px rgba(255,215,0,0.6);
-}
 
-/* فانوس متدلي */
-.hanging {
-  top: 30px;
-  left: 90px;
-  animation: swing 4s ease-in-out infinite;
-}
+
 
 .hanging::before {
   content: "";
@@ -234,22 +202,6 @@ justify-content: center;
   height: 30px;
   background: #D4AF37;
   transform: translateX(-50%);
-}
-
-/* فانوس واقف */
-.standing {
-  bottom: 20px;
-  left: 130px;
-}
-
-/* حركة التأرجح */
-@keyframes swing {
-  0% { transform: rotate(5deg); }
-  50% { transform: rotate(-5deg); }
-  100% { transform: rotate(5deg); }
-}
-.ramadan-text {
-  animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
@@ -280,12 +232,7 @@ justify-content: center;
 <body>
 
 <header>
-  <div class="ramadan-decoration">
-  <div class="crescent"></div>
-  <div class="lantern hanging"></div>
-  <div class="lantern standing"></div>
-  <div class="ramadan-text">رمضان كريم</div>   
-</div>
+ 
   <div class="header-content">
     <div class="header-text">
       <h1>الوتين للوسائل التعليمية</h1>
